@@ -97,7 +97,7 @@ Get a token and phone number ID from developers.facebook.com → WhatsApp, then:
 ```bash
 WHATSAPP_TOKEN=your-token
 WHATSAPP_PHONE_NUMBER_ID=your-phone-number-id
-WHATSAPP_NOTIFY_TO=919791670504
+WHATSAPP_NOTIFY_TO=919342216211
 ```
 
 **One constraint to know before testing.** Meta only permits free-form business messages
