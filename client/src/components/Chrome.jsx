@@ -45,7 +45,7 @@ export function Masthead() {
 
         <div className="masthead__meta">
           <span className="masthead__locations">Chennai · Dubai · Sri Lanka</span>
-          <a href={`tel:+${PHONE_DISPLAY}`}>{PHONE_DISPLAY}</a>
+          <a href={`tel:${PHONE_DISPLAY}`}>{PHONE_DISPLAY}</a>
         </div>
       </div>
       <ScrollProgress />
@@ -71,7 +71,7 @@ export function Footer() {
               </li>
               <li>
                 <Phone />
-                <a href={`tel:+${WHATSAPP_NUMBER}`}>{PHONE_DISPLAY}</a>
+                <a href={`tel:+${PHONE_DISPLAY}`}>{PHONE_DISPLAY}</a>
               </li>
               <li>
                 <Pin />
