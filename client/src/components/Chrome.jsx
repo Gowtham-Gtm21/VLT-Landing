@@ -5,15 +5,24 @@ import { Mail, Phone, Pin, LinkedIn, Instagram, WhatsApp } from './Icons';
 /**
  * Contact details live here so every surface uses the same values.
  *
- * Three separate constants on purpose — each has a different format:
- *   WHATSAPP_NUMBER : digits only, no "+" and no spaces (wa.me rejects both)
- *   PHONE_E164      : "+" plus digits, no spaces (tel: links)
- *   PHONE_DISPLAY   : formatted for humans to read on screen
+ * Calls and WhatsApp go to two different numbers, so each has its own pair of
+ * constants — one machine-readable, one for humans:
+ *
+ *   PHONE_E164 / PHONE_DISPLAY         -> the number people ring
+ *   WHATSAPP_NUMBER / WHATSAPP_DISPLAY -> the number people message
+ *
+ * The formats are not interchangeable. wa.me rejects "+" and spaces, so
+ * WHATSAPP_NUMBER is digits only. tel: needs the "+" but no spaces, so it
+ * lives inside PHONE_E164 rather than being prepended at the call site —
+ * a leading "+" in the template is how you end up dialling "++91".
  */
-export const WHATSAPP_NUMBER = '919791670504';
-export const WHATSAPP_TEXT = 'Hello! I would like to know more about your services.';
 export const PHONE_E164 = '+919342216211';
 export const PHONE_DISPLAY = '+91 93422 16211';
+
+export const WHATSAPP_NUMBER = '919791670504';
+export const WHATSAPP_DISPLAY = '+91 97916 70504';
+export const WHATSAPP_TEXT = 'Hello! I would like to know more about your services.';
+
 export const EMAIL = 'sutheesh.s@vulturelines.com';
 
 /** wa.me link with the message already typed in, matching the main site. */
