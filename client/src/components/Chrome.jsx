@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { m, useScroll, useSpring, useMotionValueEvent } from 'motion/react';
 import { Mail, Phone, Pin, LinkedIn, Instagram, WhatsApp } from './Icons';
 
-export const WHATSAPP_NUMBER = '919342216211';
-export const PHONE_DISPLAY = '+91 93422 16211';
+export const WHATSAPP_NUMBER = '9791670504';
+export const PHONE_DISPLAY = '+91 97916 70504';
 export const EMAIL = 'sutheesh.s@vulturelines.com';
 
 /**
