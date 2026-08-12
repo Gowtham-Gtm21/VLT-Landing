@@ -72,7 +72,7 @@ export function Footer() {
               </li>
               <li>
                 <Phone />
-                <a href={`tel:+${PHONE_DISPLAY}`}>{PHONE_DISPLAY}</a>
+                <a href={`tel:${PHONE_DISPLAY}`}>{PHONE_DISPLAY}</a>
               </li>
               <li>
                 <Pin />
