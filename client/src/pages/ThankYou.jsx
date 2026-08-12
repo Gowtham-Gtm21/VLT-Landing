@@ -3,7 +3,7 @@ import { m } from 'motion/react';
 import Ambient from '../components/Ambient';
 import Progress from '../components/Progress';
 import { Reveal, Stagger, SplitText } from '../components/Motion';
-import { Masthead, Footer, WhatsAppButton, EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_TEXT } from '../components/Chrome';
+import { Masthead, Footer, WhatsAppButton, EMAIL, PHONE_DISPLAY, WHATSAPP_HREF } from '../components/Chrome';
 import { Check, Arrow } from '../components/Icons';
 import { fadeUp, scaleIn, EASE } from '../lib/anim';
 import { readLead } from '../lib/session';
@@ -107,7 +107,7 @@ export default function ThankYou() {
             <Reveal className="thanks__urgent" variants={fadeUp}>
               <p className="eyebrow">In a hurry?</p>
               <p>
-                Message us on WhatsApp at <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_TEXT)}`}>{PHONE_DISPLAY}</a>{' '}
+                Message us on WhatsApp at <a href={WHATSAPP_HREF}>{PHONE_DISPLAY}</a>{' '}
                 or email <a href={`mailto:${EMAIL}`}>{EMAIL}</a> and we will pick it up sooner.
               </p>
             </Reveal>

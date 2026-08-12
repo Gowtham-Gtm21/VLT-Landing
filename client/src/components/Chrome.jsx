@@ -2,10 +2,22 @@ import { useState } from 'react';
 import { m, useScroll, useSpring, useMotionValueEvent } from 'motion/react';
 import { Mail, Phone, Pin, LinkedIn, Instagram, WhatsApp } from './Icons';
 
-export const WHATSAPP_NUMBER = '+919791670504';
+/**
+ * Contact details live here so every surface uses the same values.
+ *
+ * Three separate constants on purpose — each has a different format:
+ *   WHATSAPP_NUMBER : digits only, no "+" and no spaces (wa.me rejects both)
+ *   PHONE_E164      : "+" plus digits, no spaces (tel: links)
+ *   PHONE_DISPLAY   : formatted for humans to read on screen
+ */
+export const WHATSAPP_NUMBER = '919791670504';
 export const WHATSAPP_TEXT = 'Hello! I would like to know more about your services.';
+export const PHONE_E164 = '+919342216211';
 export const PHONE_DISPLAY = '+91 93422 16211';
 export const EMAIL = 'sutheesh.s@vulturelines.com';
+
+/** wa.me link with the message already typed in, matching the main site. */
+export const WHATSAPP_HREF = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_TEXT)}`;
 
 /**
  * The official vlt wordmark. Two versions are shipped: the supplied navy for
@@ -46,7 +58,7 @@ export function Masthead() {
 
         <div className="masthead__meta">
           <span className="masthead__locations">Chennai · Dubai · Sri Lanka</span>
-          <a href={`tel:${PHONE_DISPLAY}`}>{PHONE_DISPLAY}</a>
+          <a href={`tel:${PHONE_E164}`}>{PHONE_DISPLAY}</a>
         </div>
       </div>
       <ScrollProgress />
@@ -72,7 +84,7 @@ export function Footer() {
               </li>
               <li>
                 <Phone />
-                <a href={`tel:${PHONE_DISPLAY}`}>{PHONE_DISPLAY}</a>
+                <a href={`tel:${PHONE_E164}`}>{PHONE_DISPLAY}</a>
               </li>
               <li>
                 <Pin />
@@ -133,7 +145,7 @@ export function WhatsAppButton() {
   return (
     <a
       className="wa"
-      href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_TEXT)}`}
+      href={WHATSAPP_HREF}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
