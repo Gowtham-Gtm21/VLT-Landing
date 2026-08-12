@@ -688,7 +688,7 @@ export default function Landing() {
                 Conferences, client sessions and the odd ribbon-cutting — a few frames from
                 along the way.
               </p>
-              <div style={{ marginTop: 24 }}>
+              <div style={{ margin: '24px 0' }}>
                 <GalleryGrid items={GALLERY} />
               </div>
             </Reveal>
