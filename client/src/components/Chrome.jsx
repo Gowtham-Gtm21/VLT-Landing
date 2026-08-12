@@ -45,7 +45,7 @@ export function Masthead() {
 
         <div className="masthead__meta">
           <span className="masthead__locations">Chennai · Dubai · Sri Lanka</span>
-          <a href={`tel:+${WHATSAPP_NUMBER}`}>{PHONE_DISPLAY}</a>
+          <a href={`tel:+${PHONE_DISPLAY}`}>{PHONE_DISPLAY}</a>
         </div>
       </div>
       <ScrollProgress />
@@ -115,10 +115,10 @@ export function Footer() {
         <div className="footer__base">
           <span>© {new Date().getFullYear()} Vulturelines. All rights reserved.</span>
           <div className="footer__social">
-            <a href="https://www.linkedin.com/company/vulture-lines-tech-management-private-limited" aria-label="Vulture Lines Tech on LinkedIn" rel="noopener">
+            <a href="https://www.linkedin.com/company/vulture-lines-tech-management-private-limited" aria-label="Vulture Lines Tech on LinkedIn" rel="noopener" target="_blank">
               <LinkedIn />
             </a>
-            <a href="https://www.instagram.com/vulturelines_official" aria-label="Vulture Lines Tech on Instagram" rel="noopener">
+            <a href="https://www.instagram.com/vulturelines_official" aria-label="Vulture Lines Tech on Instagram" rel="noopener" target="_blank">
               <Instagram />
             </a>
           </div>
