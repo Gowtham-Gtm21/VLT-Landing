@@ -107,7 +107,7 @@ export default function ThankYou() {
             <Reveal className="thanks__urgent" variants={fadeUp}>
               <p className="eyebrow">In a hurry?</p>
               <p>
-                Message us on WhatsApp at <a href={`https://wa.me/${WHATSAPP_NUMBER}`}>{PHONE_DISPLAY}</a>{' '}
+                Message us on WhatsApp at <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_TEXT)}`}>{PHONE_DISPLAY}</a>{' '}
                 or email <a href={`mailto:${EMAIL}`}>{EMAIL}</a> and we will pick it up sooner.
               </p>
             </Reveal>

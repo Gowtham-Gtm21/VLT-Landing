@@ -3,6 +3,7 @@ import { m, useScroll, useSpring, useMotionValueEvent } from 'motion/react';
 import { Mail, Phone, Pin, LinkedIn, Instagram, WhatsApp } from './Icons';
 
 export const WHATSAPP_NUMBER = '+919791670504';
+export const WHATSAPP_TEXT = 'Hello! I would like to know more about your services.';
 export const PHONE_DISPLAY = '+91 93422 16211';
 export const EMAIL = 'sutheesh.s@vulturelines.com';
 
@@ -132,7 +133,7 @@ export function WhatsAppButton() {
   return (
     <a
       className="wa"
-      href={`https://wa.me/${WHATSAPP_NUMBER}`}
+      href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_TEXT)}`}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"
