@@ -3,7 +3,7 @@ import { m } from 'motion/react';
 import Ambient from '../components/Ambient';
 import Progress from '../components/Progress';
 import { Reveal, Stagger, SplitText } from '../components/Motion';
-import { Masthead, Footer, WhatsAppButton, EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER } from '../components/Chrome';
+import { Masthead, Footer, WhatsAppButton, EMAIL, PHONE_DISPLAY, WHATSAPP_NUMBER, WHATSAPP_TEXT } from '../components/Chrome';
 import { Check, Arrow } from '../components/Icons';
 import { fadeUp, scaleIn, EASE } from '../lib/anim';
 import { readLead } from '../lib/session';
