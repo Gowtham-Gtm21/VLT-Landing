@@ -115,10 +115,10 @@ export function Footer() {
         <div className="footer__base">
           <span>© {new Date().getFullYear()} Vulturelines. All rights reserved.</span>
           <div className="footer__social">
-            <a href="https://in.linkedin.com/company/vulture-lines" aria-label="Vulture Lines Tech on LinkedIn" rel="noopener">
+            <a href="https://www.linkedin.com/company/vulture-lines-tech-management-private-limited" aria-label="Vulture Lines Tech on LinkedIn" rel="noopener">
               <LinkedIn />
             </a>
-            <a href="https://instagram.com/vulturelines" aria-label="Vulture Lines Tech on Instagram" rel="noopener">
+            <a href="https://www.instagram.com/vulturelines_official" aria-label="Vulture Lines Tech on Instagram" rel="noopener">
               <Instagram />
             </a>
           </div>
