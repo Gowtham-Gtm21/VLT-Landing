@@ -66,7 +66,7 @@ export function Masthead() {
         </a>
 
         <div className="masthead__meta">
-          <span className="masthead__locations">Chennai · Dubai · Sri Lankaaa</span>
+          <span className="masthead__locations">Chennai · Dubai · Sri Lanka</span>
           <a href={`tel:${PHONE_E164}`}>{PHONE_DISPLAY}</a>
         </div>
       </div>
