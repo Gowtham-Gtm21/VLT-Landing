@@ -221,7 +221,6 @@ export default function Schedule() {
               <strong>Setting this up?</strong> <code>VITE_CALENDLY_URL</code> is empty or still the
               sample value. Point it at a real event type, for example{' '}
               <code>https://calendly.com/vlt-sutheesh/30min</code>, then restart the dev server. See
-              <code>docs/calendly.md</code>.
             </p>
             <a className="btn" href={`mailto:${EMAIL}`}>
               Email the team instead

@@ -3,7 +3,6 @@
  *
  * Posts to a Google Apps Script web app rather than the Sheets REST API, which
  * avoids a service-account key file, OAuth scopes and a Cloud project — the
- * whole setup is one script pasted into the sheet. See docs/google-sheet.md.
  *
  * Fire-and-forget, like the mailer and the WhatsApp notifier: the lead is
  * already in MongoDB before this runs, so a bad URL or a Google outage cannot

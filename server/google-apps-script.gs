@@ -1,6 +1,5 @@
 /**
  * Paste this into the Google Sheet: Extensions -> Apps Script.
- * Setup instructions are in docs/google-sheet.md.
  *
  * It receives a lead from the landing page API and either appends a new row or
  * updates the existing row for that lead when a booking or status change

@@ -10,7 +10,6 @@
  * It refuses to build without somewhere for the leads to go, since a landing
  * page that silently drops enquiries is worse than one that fails loudly.
  * Set either VITE_SHEET_WEBHOOK_URL (Google Sheet, no backend) or VITE_API_URL
- * (the Express API) in client/.env — see docs/google-sheet.md.
  */
 import { build } from 'vite';
 import react from '@vitejs/plugin-react';
@@ -48,7 +47,6 @@ Set ONE of these in client/.env and run again:
   VITE_SHEET_SECRET=the-secret-from-your-apps-script
 
     ...for the no-backend setup, where the Google Sheet is the lead store.
-    Walkthrough: docs/google-sheet.md
 
   VITE_API_URL=https://api.yourdomain.com/api
 
