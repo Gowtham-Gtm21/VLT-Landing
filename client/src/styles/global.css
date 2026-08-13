@@ -4070,7 +4070,7 @@ body::before {
 ------------------------------------------------------------------------ */
 
 .calendly-frame {
-  height: 1000px;
+  height: 900px;
   border-radius: var(--radius);
   background: #fff;
   overflow: hidden;
@@ -4094,13 +4094,13 @@ body::before {
    which is taller — give it the room rather than letting it scroll. */
 @media (max-width: 820px) {
   .calendly-frame {
-    height: 1150px;
+    height: 1000px;
   }
 }
 
 @media (max-width: 520px) {
   .calendly-frame {
-    height: 1250px;
+    height: 850px;
   }
 }
 
