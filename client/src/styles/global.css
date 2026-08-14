@@ -2206,7 +2206,7 @@ h2.display {
 
 .hero--full {
   position: relative;
-  min-height: 100svh;
+  min-height: 90svh;
   display: grid;
   place-items: center;
   overflow: hidden;
